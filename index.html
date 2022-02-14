@@ -5,24 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bodymovin projects</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/28.css">
 </head>
 <body>
-    <div id="icon-container" style="height: 1000px;width: 1000px;"></div>
-
+<!--    <div id="taftan-animation-tagvim" style="height: 1000px;width: 1000px;"></div>-->
+    <div class="volacano-square" style="height: 1000px;width: 1000px;">
+        <div class="volacano-square-top" id="taftan-animation-tagvim"></div>
+        <div class="volacano-square-right" id="taftan-animation-zehn"></div>
+        <div class="volacano-square-bottom" id="taftan-animation-adamak"></div>
+        <div class="volacano-square-left" id="taftan-animation-fehrest"></div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-
-    <script>
-      var animation = bodymovin.loadAnimation({
-      // animationData: { /* ... */ },
-          container: document.getElementById('icon-container'), // required
-          path: 'data.json', // required
-          renderer: 'svg', // required
-          loop: true, // optional
-          autoplay: true, // optional
-          name: "Demo Animation", // optional
-          assetsPath: '/timer/'
-      });
-    </script>
+    <script src="js/28.js"></script>
 </body>
 </html>
