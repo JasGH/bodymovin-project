@@ -5,23 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bodymovin projects</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="#">
+<!--    <link rel="stylesheet" href="css/main.css">-->
+    <link rel="stylesheet" href="css/28.css">
 </head>
 <body>
-    <div id="icon-container" style="height: 1000px;width: 1000px;"></div>
+    <div class="taftan-hedear-square-container">
+        <div class="volacano-square">
+            <div class="volacano-square-top" id="taftan-animation-tagvim"></div>
+            <div class="volacano-square-right" id="taftan-animation-zehn"></div>
+            <div class="volacano-square-bottom" id="taftan-animation-adamak"></div>
+            <div class="volacano-square-left" id="taftan-animation-fehrest"></div>
+            <div class="volacano-square-left" id="map_steps_1"></div>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-
     <script>
-      var animation = bodymovin.loadAnimation({
-      // animationData: { /* ... */ },
-      container: document.getElementById('icon-container'), // required
-      path: 'data.json', // required
-      renderer: 'svg', // required
-      loop: true, // optional
-      autoplay: true, // optional
-      name: "Demo Animation", // optional
-    });
+        var headerAnimations = [
+            {
+                id: 'taftan-animation-tagvim',
+                assetsPath: 'https://nodes.alaatv.com/upload/landing/28/animations/landing28-taftan-top-animation.png',
+                jsonPath: 'json/landing28-taftan-animation-tagvim.json',
+                instance : null
+            },
+            {
+                id: 'taftan-animation-adamak',
+                assetsPath: 'https://nodes.alaatv.com/upload/landing/28/animations/landing28-taftan-bottom-animation.png',
+                jsonPath: 'json/landing28-taftan-animation-adamak.json',
+                instance : null
+            },
+            {
+                id: 'taftan-animation-zehn',
+                assetsPath: 'https://nodes.alaatv.com/upload/landing/28/animations/landing28-taftan-right-animation.png',
+                jsonPath: 'json/landing28-taftan-animation-zehn.json',
+                instance : null
+            },
+            {
+                id: 'taftan-animation-fehrest',
+                assetsPath: 'https://nodes.alaatv.com/upload/landing/28/animations/landing28-taftan-left-animation.png',
+                jsonPath: 'json/landing28-taftan-animation-fehrest.json',
+                instance : null
+            },
+            {
+                id: 'map_steps_1',
+                assetsPath: "https://nodes.alaatv.com/upload/landing/abrisham25/map_steps/1/",
+                jsonPath: 'https://nodes.alaatv.com/upload/landing/abrisham25/map_steps/json_files/landing-abrisham-25-step1-Clock.json',
+                instance : null
+            }
+        ];
+        function initBodyMovin() {
+            headerAnimations.forEach( item => {
+                loadBodyMovin(item);
+            });
+        }
+        function loadBodyMovin(animation) {
+            animation.instance = lottie.loadAnimation({
+                container: document.querySelector(animation.id),
+                path: animation.jsonPath,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                name: 'Demo Animation',
+                assetsPath: animation.assetsPath
+            });
+        }
+        initBodyMovin();
     </script>
+<!--    <script src="28.js"></script>-->
 </body>
 </html>

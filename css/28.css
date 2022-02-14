@@ -1,0 +1,53 @@
+.taftan-hedear-square-container {
+    width: 100%;
+    height: 100%;
+}
+ .taftan-hedear-square-container .volacano-square .volacano-square-top {
+    position: absolute;
+    right: 136px;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    /*background-image: url(https://nodes.alaatv.com/upload/landing/28/animations/landing28-taftan-top-animation.png);*/
+    /*background-size:cover;*/
+
+}
+ .taftan-hedear-square-container .volacano-square .volacano-square-right{
+    position: absolute;
+    top:55px;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    /*background-image: url(https://nodes.alaatv.com/upload/landing/28/animations/landing28-taftan-right-animation.png);*/
+    /*background-size:cover;*/
+}
+ .taftan-hedear-square-container .volacano-square  .volacano-square-bottom{
+    position: absolute;
+    right: 136px;
+    top: 146px;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    /*background-image: url(https://nodes.alaatv.com/upload/landing/28/animations/landing28-taftan-bottom-animation.png);*/
+    /*background-size:cover;*/
+}
+ .taftan-hedear-square-container .volacano-square .volacano-square-left{
+    position: absolute;
+    left:0;
+    top: 190px;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    /*background-image: url(https://nodes.alaatv.com/upload/landing/28/animations/landing28-taftan-left-animation.png);*/
+    /*background-size:cover;*/
+}
+.taftan-hedear-square-container .volacano-square #map_steps_1{
+    position: absolute;
+    left:0;
+    top: 400px;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    /*background-image: url(https://nodes.alaatv.com/upload/landing/28/animations/landing28-taftan-left-animation.png);*/
+    /*background-size:cover;*/
+}
